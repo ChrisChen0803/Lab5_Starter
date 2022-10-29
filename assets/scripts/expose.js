@@ -1,7 +1,7 @@
 // expose.js
 
 window.addEventListener('DOMContentLoaded', init);
-
+const jsConfetti = new JSConfetti();
 function init() {
   // TODO
   addEventListener('change', (event) => {
@@ -51,7 +51,6 @@ function init() {
 function playAudio(){
   document.querySelector("audio").play();
   if(document.getElementById("horn-select").value==="party-horn"){
-    const jsConfetti = new JSConfetti();
     jsConfetti.addConfetti();
   }
 }
